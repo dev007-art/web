@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var pa = {"name":"zs","age":23,"gender":true}
+        var ps = [{"name":"zs","age":23,"gender":true},
+            {"name":"lisi","age":24,"gender":true},
+        ]
+        //alert(ps[1].name);
+        //遍历
+        for(var key in pa){
+            alert(key+":"+pa[key]);
+        }
+        //获取ps中所有值
+        for(var i=0;i<ps.length;i++){
+            var p=ps[i];
+            for(var key in p){
+                alert(key+":"+p[key]);
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
